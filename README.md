@@ -8,7 +8,7 @@ Start the server
 ```
 python3 server.py
 ```
-Sending messages using cli.py
+2. Sending messages using cli.py
 ```
 python3 client.py
 ```
