@@ -13,3 +13,10 @@ python3 server.py
 python3 client.py
 ```
 
+
+## Release History
+* 0.0.1 
+	* 0.0.1  Added README AND FILES
+	* 0.0.2  ADDED GUI 
+
+* 0.1.0
