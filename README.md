@@ -13,7 +13,7 @@ sudo pacman -S tk
 sudo apt-get install python3-tk 
 ```
 
-###Usage
+### Usage
 1. Start the server 
 ```
 python3 server.py
