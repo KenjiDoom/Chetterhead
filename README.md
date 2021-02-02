@@ -8,7 +8,10 @@ Arch Linux
 ```
 sudo pacman -S tk
 ```
-
+Ubuntu
+```
+sudo apt-get install python3-tk 
+```
 
 
 1. Usage
