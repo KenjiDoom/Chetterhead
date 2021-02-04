@@ -10,10 +10,11 @@ s.listen(100) # Connections to listen too
 while True:
     clientsocket, address = s.accept()
     #print(f"[{address}] has conncected..")
-    #clientsocket.send(bytes("Welcome to the server!", "utf-8"))
+   # clientsocket.send(bytes("Welcome to the server!", "utf-8"))
     data = clientsocket.recv(1024)
     data_string = data.decode('utf-8')
     print (data_string)
+    clientsocket.send(bytes(str(data), "utf-8"))
     clientsocket.close()
 
 
