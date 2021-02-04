@@ -1,7 +1,7 @@
 import socket 
 PORT = 6060
 print ("Enter a cool User Name")
-username = raw_input("[0]: ")
+username = input("[0]: ")
 
 
 while True:
@@ -9,12 +9,20 @@ while True:
     s.connect((socket.gethostname(), PORT))
 
     print ("Message you would like to send to server..")
-    y = raw_input("[0]: ")
+    y = input("[0]: ")
     ting = (username + " : " + y)
     s.sendall(ting.encode())
     
+    #s.close()
+    
+    #data = clientsocket.rev(1024)
+    #data_string = data.decode('utf-8')
+    #print(data_string)
+
+
+   # s.close()
+    
+    msg = "" 
+    msg = s.recv(1024)
+    print(msg.decode("utf-8"))
     s.close()
-    
-   # msg = s.recv(1024)
-   # print(msg.decode("utf-8"))
-    
