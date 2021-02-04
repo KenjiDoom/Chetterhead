@@ -13,16 +13,7 @@ while True:
     ting = (username + " : " + y)
     s.sendall(ting.encode())
     
-    #s.close()
-    
-    #data = clientsocket.rev(1024)
-    #data_string = data.decode('utf-8')
-    #print(data_string)
-
-
-   # s.close()
-    
     msg = "" 
     msg = s.recv(1024)
-    print(msg.decode("utf-8"))
+    print("messaged recv: " + msg.decode("utf-8"))
     s.close()
